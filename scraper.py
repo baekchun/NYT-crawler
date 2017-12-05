@@ -1,7 +1,9 @@
 import argparse
 import logging
 
+from translate import Translate
 from selenium import webdriver
+
 
 # log all the URLs that I was unable to crawl
 logging.basicConfig(filename='error_URLs.log')
@@ -11,6 +13,9 @@ logging.getLogger("selenium").setLevel(logging.WARNING)
 
 
 class Crawler:
+    """
+    Crawler object that visits different pages on New York Times
+    """
     def __init__(self):
         self.browser = webdriver.Chrome('/Users/baekchunkim/Downloads/chromedriver')
 
@@ -73,7 +78,7 @@ class LinkScraper(Crawler):
             links = self.getLinks()
 
             # for each article link, go into it and extract content
-            for url in links:        
+            for url in links[:2]:        
                 bi_text = scraper.extract(url)
         
                 # write to file
@@ -82,6 +87,8 @@ class LinkScraper(Crawler):
     def write(self, text):
         """
         Write bitext article to a txt file
+        input: text - a tuple of English text, Chinese text and translated text
+        from Chinese to English
         """
 
         if text:
@@ -93,18 +100,14 @@ class LinkScraper(Crawler):
             )
 
             with open(filename, 'w') as output:
-
-                # first append the English sentences
-                for en in text[0]:
-                    output.write(en + "\n")
+                # text is a tuple of en, ch and translated sentences 
+                for t in text:
+                    for sentence in t:
+                        output.write(sentence + "\n")
                 
-                # separate by asterisks
-                output.write("************************************************************" + "\n")
-                
-                # then append the Chinese sentences
-                for ch in text[1]:
-                    output.write(ch + "\n")
-                
+                    # separate by asterisks
+                    output.write("************************************************************" + "\n")
+    
             # increment the file number
             self.FILE_NUM += 1
 
@@ -114,6 +117,10 @@ class ArticleScraper(Crawler):
         # initialize crawler object for Article Scraper
         super(ArticleScraper, self).__init__()
         self.crawler = self.browser
+
+        # initialize a translator object 
+        self.translator = Translate()
+
         self.CSS_SELECTOR = "div.bilingual.cf > div.cf.articleContent"
 
     def extract(self, url):
@@ -125,8 +132,9 @@ class ArticleScraper(Crawler):
 
         self.crawler.get(URL)
 
-        ch_text = []
-        en_text = []
+        ch_text = [] # chinese sentence
+        en_text = [] # english sentence
+        tr_text = [] # sentence translated from chinese to english
 
         try:    
             elements = self.crawler.find_elements_by_css_selector(self.CSS_SELECTOR)
@@ -136,11 +144,14 @@ class ArticleScraper(Crawler):
                 en_text.append(en)
                 ch_text.append(ch)
 
-        except:
-            logging.debug("Unable to extract content from URL:", URL)
-            return None
+                # translate chinese to english
+                tmp_translated = self.translator.translate(ch)
+                tr_text.append(tmp_translated)
 
-        return (en_text, ch_text)
+        except:
+            raise ValueError("Unable to extract content from URL:", URL)
+
+        return (en_text, ch_text, tr_text)
 
 if __name__ == "__main__":
     # driver
