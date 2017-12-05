@@ -1,4 +1,14 @@
+import argparse
+import logging
+
 from selenium import webdriver
+
+# log all the URLs that I was unable to crawl
+logging.basicConfig(filename='error_URLs.log')
+
+# only log the WARNING logs from Selenium
+logging.getLogger("selenium").setLevel(logging.WARNING)
+
 
 class Crawler:
     def __init__(self):
@@ -9,16 +19,17 @@ class Crawler:
 
 
 class LinkScraper(Crawler):
-    def __init__(self):
-        # initialize a cralwer object
+
+    def __init__(self, options):
+        # initialize a cralwer object for Link Scraper
         super(LinkScraper, self).__init__()
         self.crawler = self.browser
 
-        # initial URL to NYC internaitonal articles homepage
+        # initial URL to NYC international articles homepage
         self.URL = "https://cn.nytimes.com/world/{PAGE_NUM}/"
 
         # scrape up to this page number
-        self.MAX_PAGE_NUM = 2
+        self.MAX_PAGE_NUM = int(options.num_pages)
 
         # start scraping from page 1
         self.page_num = 1
@@ -73,31 +84,37 @@ class LinkScraper(Crawler):
         Write bitext article to a txt file
         """
 
-        # Set the filename
-        template = "output__{NUM}.txt"
-        filename = template.format(
-            NUM=format(self.FILE_NUM, "03")
-        )
+        if text:
 
-        with open(filename, 'w') as output:
-            for en in text[0]:
-                output.write(en + "\n")
-            
-            # separate by asterisks
-            output.write("************************************************************" + "\n")
-            
-            for ch in text[1]:
-                output.write(ch + "\n")
-            
-        # increment the file number
-        self.FILE_NUM += 1
+            # Set the filename
+            template = "output__{NUM}.txt"
+            filename = template.format(
+                NUM=format(self.FILE_NUM, "03") # pad with 3 zeros in front
+            )
+
+            with open(filename, 'w') as output:
+
+                # first append the English sentences
+                for en in text[0]:
+                    output.write(en + "\n")
+                
+                # separate by asterisks
+                output.write("************************************************************" + "\n")
+                
+                # then append the Chinese sentences
+                for ch in text[1]:
+                    output.write(ch + "\n")
+                
+            # increment the file number
+            self.FILE_NUM += 1
 
 class ArticleScraper(Crawler):
 
     def __init__(self):
+        # initialize crawler object for Article Scraper
         super(ArticleScraper, self).__init__()
         self.crawler = self.browser
-        self.SELECTOR = "div.bilingual.cf > div.cf.articleContent"
+        self.CSS_SELECTOR = "div.bilingual.cf > div.cf.articleContent"
 
     def extract(self, url):
         """
@@ -112,7 +129,7 @@ class ArticleScraper(Crawler):
         en_text = []
 
         try:    
-            elements = self.crawler.find_elements_by_css_selector(self.SELECTOR)
+            elements = self.crawler.find_elements_by_css_selector(self.CSS_SELECTOR)
 
             for i in range(len(elements) - 1):
                 en, ch = elements[i].text.split("\n")
@@ -120,11 +137,16 @@ class ArticleScraper(Crawler):
                 ch_text.append(ch)
 
         except:
-            print("ERROR!! on URL:", URL)
+            logging.debug("Unable to extract content from URL:", URL)
+            return None
 
         return (en_text, ch_text)
 
 if __name__ == "__main__":
     # driver
-    link_scraper = LinkScraper()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--num_pages', '-num', required=True, help='Number of pages to scrape on New York Times')
+    args = parser.parse_args()
+
+    link_scraper = LinkScraper(args)
     link_scraper.scrape()
