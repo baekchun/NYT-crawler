@@ -1,7 +1,7 @@
 from apiclient.discovery import build
 from html2text import HTML2Text
 
-API_KEY = "AIzaSyByE2b7ouR-io5CVLGAGNDjVYSfQs_Q74U"
+API_KEY = ""
 VERSION = "v2"
 SERVICE = "translate"
 
