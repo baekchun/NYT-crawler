@@ -1,0 +1,74 @@
+A quickly spreading ransomware attack is hitting countries across the world including France, Russia, Spain, Ukraine and the United States, just weeks after a ransomware attack known as WannaCry.
+就在“想哭”(WannaCry)勒索软件攻击数周后，另一个勒索软件正在世界各地迅速蔓延，法国、俄罗斯、西班牙、乌克兰和美国等国均已受到波及。
+What We Know
+我们已经知道的信息
+• Several private companies have confirmed that they were hit by the attack, including the American pharmaceutical giant Merck, the Danish shipping company AP Moller-Maersk, the British advertising firm WPP, the French multinational Saint-Gobain and the Russian steel, mining and oil companies Evraz and Rosneft.
+• 几家私人公司证实遭到了攻击，其中包括美国制药巨头默克(Merck)、丹麦航运企业马士基(AP Moller-Maersk)、英国广告公司WPP、法国跨国公司圣戈班(Saint-Gobain)和俄罗斯钢铁、采矿和石油公司耶弗拉兹(Evraz)和俄罗斯石油公司(Rosneft)。
+• Photographs and videos of computers affected by the attack show a message of red text on a black screen.
+• 计算机遭受攻击后，照片和视频会在黑屏上显示红色文字信息：“糟糕，你的重要文件已被加密。
+The message read: “Oops, your important files have been encrypted.
+• 计算机遭受攻击后，照片和视频会在黑屏上显示红色文字信息：“糟糕，你的重要文件已被加密。如果你看到此文，表明文件已加密，不能再访问。
+If you see this text then your files are no longer accessible because they have been encrypted.
+如果你看到此文，表明文件已加密，不能再访问。
+Perhaps you are busy looking to recover your files but don’t waste your time.”
+也许你试图自己恢复文件，但那是在浪费时间。”
+• Kaspersky Lab, a cybersecurity firm based in Moscow, reported that about 2,000 computer systems had been affected by the new ransomware.
+• 莫斯科的网络安全公司卡巴斯基实验室(Kaspersky Lab)报道说，大约有2000个计算机系统受到这种新型勒索病毒的影响。
+• Cybersecurity researchers first called the new ransomware attack Petya, as it bore similarities to a ransomware strain known by that name, which was first reported by Kasperksy in March 2016.
+Petya由卡巴斯基在2016年3月首次报告。
+But Kaspersky later said that its investigation into the new attack found that it was a type of ransomware that had never been seen before.
+但卡巴斯基后来表示，他们对这次攻击进行调查后发现，以前没有见过这种勒索病毒。
+• ESET, a Slovakia-based cybersecurity company, said the first known infection occurred early on June 27, through a Ukrainian software company called MeDoc.
+• ESET是一家位于斯洛伐克的网络安全公司，它们表示，首例已知的感染发生在6月27日早些时候，位于一家名为MeDoc的乌克兰软件公司。
+MeDoc denied that its program was the initial infection point.
+MeDoc否认了其程序是初始的感染点。
+In a Facebook post, the firm wrote, “At the time of updating the program, the system could not be infected with the virus directly from the update file,” though an earlier message confirmed that its systems had been compromised.
+该公司在Facebook上一篇帖子中写道：“在更新程序的时候，系统不会从更新的文件中直接感染这种病毒，”尽管早期的消息证实该公司的系统已被感染。
+• Symantec, a Silicon Valley cybersecurity firm, confirmed that the ransomware was infecting computers through at least one exploit, or vulnerability to computer systems, known as Eternal Blue.
+• 硅谷网络安全公司赛门铁克(Symantec)证实，这种勒索病毒至少利用了“永恒之蓝”(Eternal Blue)这个电脑系统的漏洞来传播。
+• Eternal Blue was leaked online last April by a mysterious group of hackers known as the Shadow Brokers, who have previously released hacking tools used by the National Security Agency.
+• “永恒之蓝”是去年4月被神秘的黑客组织“影子经纪人”(The Shadow Brokers)泄露到网上的，他们以前就曾经发布过美国国家安全局(National Security Agency)使用的黑客工具。
+That vulnerability was used in May to spread the WannaCry ransomware, which affected hundreds of thousands of computers in more than 150 countries.
+这个漏洞在5月份被用来传播“想哭”勒索软件，导致150多个国家数以十万计的计算机受到感染。• ESET和其他几家网络安全公司已经确认，这次攻击至少还利用了一个PsExec的漏洞，它会通过搜索管理员证书来控制并利用网络中没有更新到最新软件的单一计算机来传播病毒。
+• ESET and several other cybersecurity companies have identified at least one other exploit used in the attack known as PsExec, which takes advantage of a single computer that has not been updated with the latest software in a network to spread infections by looking for — and using — administrative credentials.
+• ESET和其他几家网络安全公司已经确认，这次攻击至少还利用了一个PsExec的漏洞，它会通过搜索管理员证书来控制并利用网络中没有更新到最新软件的单一计算机来传播病毒。
+By using PsExec, the ransomware continued spreading across systems that had been updated, or patched, after the WannaCry outbreak last month.
+通过使用PsExec，这个勒索软件仍然可能在上个月“想哭”爆发后已经更新了系统或打了补丁的系统中传播。
+• Several cybersecurity researchers have identified a Bitcoin address to which the attackers are demanding a payment of $300 from their victims.
+• 几位网络安全研究人员确定了一个比特币地址，攻击者要求受害者向该地址支付300美元赎金。
+At least some of the victims appear to be paying the ransom, even though the email address used by the attackers has been shut down.
+至少有部分受害者似乎正打算支付赎金，虽然攻击者使用的电子邮件地址已被封。这就是说，即使支付了赎金，攻击者也无法让受害者重新访问他们的计算机网络。
+That removes the possibility that the attackers could restore a victim’s access to their computer networks, even once ransom is paid.
+这就是说，即使支付了赎金，攻击者也无法让受害者重新访问他们的计算机网络。
+What We Don’t Know
+我们不知道的信息
+• Who is behind the ransomware attack.
+• 谁是这个勒索软件攻击的始作俑者。
+The original Petya ransomware was developed and used by cybercriminals, and variations have been sold through dark web trading sites, which are accessible only by using browsers that mask a user’s identity, making it difficult for cybersecurity researchers to track.
+最早的Petya勒索病毒是由网络犯罪分子开发和使用的，暗网交易网站上有其各种变体出售。
+• The motives for the attack.
+• 攻击的动机是什么。
+Cybersecurity researchers ask why, if the goal of the attack was to force victims to pay ransom, more care was not taken to protect the email address through which attackers could communicate with their victims, or to provide multiple avenues for payment.
+网络安全研究人员想知道：如果这次攻击目的是迫使受害者支付赎金，那么为什么攻击者没有花更多的心思去保护可以和受害者沟通的电邮地址，也没有提供多种付款渠道呢？
+• How much bigger this attack will get.
+• 这次攻击的规模将会有多大。
+Cybersecurity researchers say that like WannaCry, the ransomware infects computers using vulnerabilities in the central nerve of a computer, called a kernel, making it difficult for antivirus firms to detect.
+网络安全研究人员说，像“想哭”一样，勒索软件利用计算机中心神经“内核”中的漏洞感染计算机，让防病毒公司难以发现。它还可以利用网络上的单个未打补丁的计算机，感染一个巨大网络中的其他计算机，这就意味着，即使系统在“想哭”之后进行了更新，也可能再次遭受感染。
+It also has the ability to take advantage of a single unpatched computer on a network to infect computers across a vast network, meaning that even systems that were updated after WannaCry could potentially become vulnerable again.
+它还可以利用网络上的单个未打补丁的计算机，感染一个巨大网络中的其他计算机，这就意味着，即使系统在“想哭”之后进行了更新，也可能再次遭受感染。
+What Is Ransomware?
+什么是勒索软件？
+• Ransomware is one of the most popular forms of online attack today.
+什么是勒索软件？
+It typically begins with attackers sending their victims email that includes a link or a file that appears innocuous but contains dangerous malware.
+通常，一开始是攻击者向受害者发送电子邮件，其中包含一个链接或文件，看起来没有什么问题，但里面藏有危险的恶意软件。
+• Once a victim clicks on the link or opens the attachment, the computer becomes infected.
+• 受害者点击链接或打开附件后，计算机就会被感染。
+The program encrypts the computer, essentially locking the user out of files, folders and drives on that computer.
+这个程序会加密计算机，导致用户无法访问电脑里的文件、文件夹和驱动器。
+In some cases, the entire network the computer is connected to can become infected.
+在某些情况下，该计算机连接的整个网络都有可能被感染。
+• The victim then receives a message demanding payment in exchange for attackers unlocking the system.
+• 然后受害者就收到要求支付赎金消息，以换取攻击者解锁系统。
+The payment is usually requested in Bitcoin, a form of digital currency.
+通常是要求用比特币进行支付，那是一种数字货币。

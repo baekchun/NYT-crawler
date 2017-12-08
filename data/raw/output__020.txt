@@ -1,0 +1,39 @@
+SEOUL, South Korea — North Korean hackers stole a vast cache of data, including classified wartime contingency plans jointly drawn by Washington and Seoul, when they breached the computer network of the South Korean military last year, a South Korean lawmaker said Tuesday.
+One of the contingency plans contained the South Korean military’s plan to remove the North Korean leader Kim Jong-un, referred to as the “decapitation” plan, should war break out on the Korean Peninsula, the lawmaker, Rhee Cheol-hee, told reporters.
+Mr. Rhee, a member of the governing Democratic Party who serves on the defense committee of the National Assembly, said he only recently learned of the scale of the North Korean hacking attack, which was first discovered in September last year.
+It was not known whether any of the military’s top secrets were leaked, although Mr. Rhee said that nearly 300 lower-classification confidential documents were stolen. The military is still unable to catalog nearly 80 percent of the leaked data, he said.
+A Defense Ministry spokesman, Moon Sang-gyun, refused to comment on Mr. Rhee’s disclosure.
+When the hacking attack was found out last year, the ministry blamed North Korea. But it has acknowledged only that “some classified information” was stolen, saying that revealing more details would only benefit its enemies.
+Some South Korean news media, citing anonymous sources, had earlier reported that the leaked data included wartime contingency plans. But Mr. Rhee is the first member of the parliamentary committee that oversees the military to disclose similar details.
+It remained unclear how much the hacking has undermined the joint preparedness of the South Korean and United States militaries, with South Korean officials simply saying that they have been redressing whatever damage was caused by the cyberattack.
+Under their mutual defense treaty, the United States takes operational control of South Korean troops in the event of war on the divided Korean Peninsula. The two sides hone their war plans through annual joint military exercises. The plan containing the so-called decapitation operation, Operations Plan 5015, had been updated in 2015 to reflect the growing nuclear and missile threat from North Korea. Its details remain classified.
+As Mr. Kim, the North Korean leader, has accelerated his nuclear missile program in recent years, South Korean defense officials have publicly discussed pre-emptive strikes at critical missile and nuclear sites in North Korea and a decapitation operation.
+After North Korea’s sixth — and by far most powerful — nuclear test last month, the South Korean defense minister, Song Young-moo, told lawmakers in Seoul that a special forces unit with a task of removing Mr. Kim would be established by the end of the year.
+Last month, United States strategic bombers and fighter jets also flew deep to the north along the east coast of North Korea in what some South Korean defense analysts said was an exercise to target the North Korean leadership in the event of conflict.
+North Korea bristles at any threat to Mr. Kim, and a war of words has escalated between North Korea and the Trump administration. North Korea claimed a right to shoot down American warplanes flying in international airspace if they came near the country. When President Trump threatened to “totally destroy” North Korea last month, Mr. Kim vowed to “tame the mentally deranged U.S. dotard with fire.”
+Mr. Kim was desperate to get hold of South Korea’s decapitation plan, South Korean intelligence officials told lawmakers in June. He had also begun using his deputies’ cars as decoys to move from place to place, they said.
+North Korea runs an army of hackers trained to disrupt enemy computer networks and steal cash and sensitive data. In the past decade, it has been blamed for numerous cyber-heists and other hacking attacks in South Korea and elsewhere.
+In the attack in September last year, later code-named “Desert Wolf” by anti-hacking security officials, North Korean hackers infected 3,200 computers, including 700 connected to the South Korean military’s internal network, which is normally cut off from the internet. The attack even affected a computer used by the defense minister.
+Investigators later learned that the hackers first infiltrated the network of a company providing a computer vaccine service to the ministry’s computer network in 2015. They said the hackers operated out of IP addresses originating in Shenyang, a city in northeast China that had long been cited as an operating ground for North Korean hackers.
+The intruders used the vaccine server to infect internet-connected computers of the military with malicious codes in August last year, the investigators said. They could also infiltrate the malware into intranet computers when the military’s closed internal network was mistakenly linked to the internet during maintenance.
+************************************************************
+韩国首尔——一名韩国议员周二表示，朝鲜黑客去年曾侵入韩国军方的计算机网络，窃取了大量数据，其中包括华盛顿和首尔联合制定的机密战时应急计划。
+议员李哲熙（Rhee Cheol-hee，音）对记者说，被盗应急计划之一包含一旦朝鲜半岛爆发战争，韩国军方拿掉朝鲜领导人金正恩的计划，即所谓的“斩首”计划。 
+李哲熙是执政党民主党的成员，在国民议会国防委员会任职。他说，他最近才了解到朝鲜黑客攻击的规模，攻击是去年9月首次被发现的。
+目前尚不清楚军方的任何绝密信息是否被泄露，不过李哲熙说，近300份较低级别的机密文件被盗。他说，军方仍未能对泄露数据的近80%进行编目。
+韩国国防部发言人文相均(Moon Sang-gyun)拒绝对李哲熙的披露置评。
+去年黑客攻击被发现时，韩国外交部曾将其归咎于朝鲜。但韩国只承认“一些机密信息”被盗，并说，披露更多细节只会对其敌人有利。
+一些韩国新闻媒体曾援引匿名消息源，对泄露数据中包括战时应急计划一事在此前做过报道。但李哲熙是负责监督军队的议会委员会首位披露类似细节的成员。
+目前还不清楚黑客攻击对韩国和美国军队的联合防范造成了多大破坏，韩国官员只是说，他们一直在弥补网络攻击造成的任何破坏。
+据韩美共同防御条约，朝鲜半岛发生战争时，美国将对韩国军队进行作战指挥。两国通过年度联合军事演习来加强他们的作战能力。包含了所谓“斩首行动”的应急计划名为“5015行动计划”，两国曾在2015年对该计划进行了更新，以反映朝鲜日益增长的核威胁和导弹威胁。计划的细节仍属机密。
+朝鲜领导人金正恩近年来加速了其核导弹计划，韩国国防部官员已公开讨论过对朝鲜关键导弹和核设施的先发制人打击以及斩首行动。
+朝鲜上个月进行了第六次、也是威力远大于以前的一次核试验之后，韩国国防部长宋永武在首尔告诉国会议员，将在今年年底前成立一支负责拿掉金正恩的特别部队。
+上个月，美国战略轰炸机和战斗机也曾在朝鲜东海岸以外北部纵深的上空飞行，一些韩国防务分析人士说，那次飞行是为在冲突爆发时以朝鲜领导人为目标的演习。
+任何对金正恩的威胁都让朝鲜恼怒，朝鲜和特朗普政府之间的舌战已经升级。朝鲜声称，如果美国飞机靠近该国飞行，即使是在国际领空，朝鲜也有权将其击落。上个月，特朗普总统曾威胁要“彻底摧毁”朝鲜，金正恩则誓言要“以火惩治美国的疯老头”。
+韩国情报官员今年6月曾对议员说，金正恩迫切希望得到韩国的斩首计划。他们说，金正恩从一个地方到另一个地方去时，也开始使用副手的汽车，以制造假目标。
+朝鲜指挥着一支黑客大军，训练他们破坏敌方的计算机网络，窃取现金和敏感数据。在过去的十年里，朝鲜被指责对韩国和其他地方发动过多次网络抢劫和其他黑客攻击。
+反黑客安全官员后来给去年9月的袭击起了“沙漠狼”的代号，在那次袭击中，朝鲜黑客感染了3200台计算机，其中包括700台与韩国军方内部网络相连的机器，这700台机器通常不接入互联网。袭击甚至影响到韩国国防部长使用的计算机。
+调查人员后来了解到，黑客先是在2015年侵入了一家为国防部计算机网络提供病毒疫苗服务的公司的网络。他们说，这些黑客操作来自属于沈阳的IP地址。沈阳是中国东北的一个城市，长期以来一直被认为是朝鲜黑客进行操作的地方。
+调查人员说，去年8月，入侵者使用疫苗服务器，用恶意代码感染了接入互联网的军方计算机。军方封闭的内部网络在维护过程中被错误地连接到互联网时，入侵者也得以让恶意软件悄悄进入了国防部的内部网。
+************************************************************
+************************************************************
