@@ -17,7 +17,7 @@ class Crawler:
     Crawler object that visits different pages on New York Times
     """
     def __init__(self):
-        self.browser = webdriver.Chrome('/Users/baekchunkim/Downloads/chromedriver')
+        self.browser = webdriver.Chrome('[PATH_TO_CHROME_DRIVER]')
 
     def getBrowser(self):
         return self.browser
@@ -128,6 +128,7 @@ class ArticleScraper(Crawler):
         For each article, separate the chinese and english text and return a list of list of
         english and chinese text of this article
         """
+
         URL = url + "dual/"
 
         self.crawler.get(URL)
@@ -141,15 +142,20 @@ class ArticleScraper(Crawler):
 
             for i in range(len(elements) - 1):
                 en, ch = elements[i].text.split("\n")
+                # print (en)
+                # print (cn)
                 en_text.append(en)
                 ch_text.append(ch)
 
                 # translate chinese to english
+                # this function has been shifted to another file
+
                 tmp_translated = self.translator.translate(ch)
                 tr_text.append(tmp_translated)
 
         except:
-            raise ValueError("Unable to extract content from URL:", URL)
+            # raise ValueError("Unable to extract content from URL:", URL)
+            print ("Unable to extract content from URL:", URL)
 
         return (en_text, ch_text, tr_text)
 

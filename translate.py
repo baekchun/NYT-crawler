@@ -1,7 +1,7 @@
 from apiclient.discovery import build
 from html2text import HTML2Text
 
-API_KEY = ""
+API_KEY = "INSERT_YOUR_API_KEY"
 VERSION = "v2"
 SERVICE = "translate"
 
@@ -35,7 +35,3 @@ class Translate:
             raise ValueError("Invalid input")
 
         return translated_text
-
-# t = Translate()
-
-# print (t.translate("两年前发生的制衣厂大楼坍塌事故造成逾千人死亡。孟加拉国警方日前正式以故意杀人罪指控涉案41人。这是制衣业历史上死亡人数最高的一场灾难。"))
