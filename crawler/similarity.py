@@ -75,5 +75,6 @@ def sentence_similarity(sentence1, sentence2):
 def symmetric_sentence_similarity(sentence1, sentence2):
 	return (sentence_similarity(sentence1, sentence2) + sentence_similarity(sentence2, sentence1)) / 2
 
+print(symmetric_sentence_similarity("I love you baby", "you love me baby"))
 
 
